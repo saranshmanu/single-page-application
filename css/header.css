@@ -1,0 +1,35 @@
+body {
+	overflow-x: hidden;
+}
+
+.navbar-layout {
+	box-shadow: none;
+	background-color: rgb(255, 255, 255);
+}
+
+.navbar-button {
+	background-color: transparent;
+	border: 0px;
+	font-size: small;
+}
+
+
+.navbar-menu-button {
+	background-color: rgb(9, 31, 48);
+	border: 0px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 20px;
+	border-radius: 0%;
+	margin-right: 20px;
+}
+
+.navbar-menu-button-icon {
+	width: 16px;
+}
+
+.navbar-search {
+	border-bottom: 2px solid rgb(246, 202, 100) !important;
+	border-radius: 0%;
+	padding-left: 0px;
+}

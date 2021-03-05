@@ -1,0 +1,61 @@
+.color-selector {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.button span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background: #eeeeee;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: ease .3s;
+}
+
+.button span:hover {
+  padding: 10px;
+}
+
+.blue .button span {
+  background: rgb(9, 31, 48);
+}
+
+.grey .button span {
+  background: rgb(134, 134, 134);
+}
+
+/* .layer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: -1;
+} */
+
+.blue input:checked ~ .layer {
+  background: rgb(9, 31, 48);
+}
+
+.grey input:checked ~ .layer {
+  background: rgb(134, 134, 134);
+}

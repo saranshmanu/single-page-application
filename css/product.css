@@ -1,0 +1,29 @@
+#product-layout .product {
+  min-height: 20px;
+  margin: 9px;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition:0.3s;
+  transition:0.3s;
+}
+
+#product-layout:hover .product {
+  opacity: 0.5;
+}
+
+#product-layout:hover .product:hover {
+  opacity: 1;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image::after {
+  content: '';
+  background: white;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

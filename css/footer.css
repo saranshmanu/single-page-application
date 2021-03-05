@@ -1,0 +1,35 @@
+.footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 100;
+	background-color: white;
+	padding: 50px 50px 20px 50px;
+}
+
+.footer-button-layout {
+	border: 0px;
+	padding: 0px 20px 0px 0px;
+}
+
+.footer-button {
+	background-color: white;
+	border: 0px;
+	color: black;
+	border-radius: 0%;
+	padding: 8px 16px 8px 16px;
+}
+
+.footer-button-layout-selected {
+	border: 0px;
+	padding: 0px 20px 0px 0px;
+	overflow: hidden;
+}
+
+.footer-button-selected {
+	background-color: black;
+	border: 0px;
+	color: white;
+	border-radius: 0%;
+	padding: 8px 16px 8px 16px;
+}
