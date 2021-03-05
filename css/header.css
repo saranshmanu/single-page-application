@@ -13,7 +13,6 @@ body {
 	font-size: small;
 }
 
-
 .navbar-menu-button {
 	background-color: rgb(9, 31, 48);
 	border: 0px;
@@ -28,8 +27,18 @@ body {
 	width: 16px;
 }
 
+.navbar-search-layout:hover .navbar-search {
+	border-bottom: 2px solid rgb(246, 202, 100) !important;
+	border-radius: 0%;
+	padding-left: 0px;
+	width: 200px;
+	display: inline-block;
+}
+
 .navbar-search {
 	border-bottom: 2px solid rgb(246, 202, 100) !important;
 	border-radius: 0%;
 	padding-left: 0px;
+	width: 0px;
+	display: none;
 }
