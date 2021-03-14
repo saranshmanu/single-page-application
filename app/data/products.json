@@ -1,0 +1,62 @@
+[
+	{
+		"id": 0,
+		"name": "Cantilever Chair",
+		"category": "table and chair",
+		"collection": "Scandavanian Collection",
+        "image": {
+            "primary": "arm-chair-one.jpeg",
+            "list": [
+                "arm-chair-two.webp"
+            ]
+        },
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non sodales neque sodales ut etiam sit. Venenatis a condimentum vitae sapien. Nec feugiat nisl pretium fusce id velit ut tortor pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum.",
+		"price": 500
+	},
+	{
+		"id": 1,
+		"name": "Wing chair",
+		"category": "table and chair",
+		"collection": "Roman Collection",
+        "image": {
+            "primary": "chair-one.webp",
+            "list": [
+                "chair-two.webp",
+                "chair-three.webp",
+                "chair-four.webp"
+            ]
+        },
+        "description": "Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae turpis massa sed elementum tempus. Sit amet consectetur adipiscing elit duis. Sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea. Quam nulla porttitor massa id neque aliquam vestibulum.",
+		"price": 550
+	},
+	{
+		"id": 2,
+		"name": "Becky Metal Bar Stool",
+		"category": "table and chair",
+		"collection": "Turquoise Collection",
+        "image": {
+            "primary": "metal-chair-one.webp",
+            "list": [
+                "metal-chair-two.webp",
+                "metal-chair-three.webp"
+            ]
+        },
+        "description": "Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae turpis massa sed elementum tempus. Sit amet consectetur adipiscing elit duis. Sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea. Quam nulla porttitor massa id neque aliquam vestibulum.",
+		"price": 2500
+	},
+    {
+		"id": 3,
+		"name": "Plum Single Bed",
+		"category": "Bed Set",
+		"collection": "Acacia Dark Collection",
+        "image": {
+            "primary": "bed-one.webp",
+            "list": [
+                "bed-two.webp",
+                "bed-three.webp"
+            ]
+        },
+        "description": "Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae turpis massa sed elementum tempus. Sit amet consectetur adipiscing elit duis. Sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea. Quam nulla porttitor massa id neque aliquam vestibulum.",
+		"price": 1399
+	}
+]
