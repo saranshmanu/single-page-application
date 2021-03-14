@@ -8,8 +8,8 @@ function getVals() {
     slide2 = slide1;
     slide1 = tmp;
   }
-  var displayElement = parent.getElementsByClassName('rangeValues')[0];
-  displayElement.innerHTML = slide1 + ' - ' + slide2;
+  // var displayElement = parent.getElementsByClassName('rangeValues')[0];
+  // displayElement.innerHTML = slide1 + ' - ' + slide2;
 }
 
 window.onload = function() {
