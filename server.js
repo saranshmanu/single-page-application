@@ -14,7 +14,12 @@ app.use(morgan('tiny'));
 app.use(express.static('public'));
 
 app.get('/api/products', function(req, res) {
-  res.send(products);
+  if(!req.query.filter) return res.send(products);
+  const filters = req.query.filter.toString().split(',');
+  const filteredProducts = products.filter((product) => {
+    return filters.some(filter => product.filter.includes(filter));
+  });
+  res.send(filteredProducts);
 });
 
 app.get('/api/product', function(req, res) {
