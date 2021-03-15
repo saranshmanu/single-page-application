@@ -10,6 +10,11 @@
                 "arm-chair-two.webp"
             ]
         },
+        "filter": [
+            "Scandavanian",
+            "Metal",
+            "Table and Chair"
+        ],
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non sodales neque sodales ut etiam sit. Venenatis a condimentum vitae sapien. Nec feugiat nisl pretium fusce id velit ut tortor pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum.",
 		"price": 500
 	},
@@ -26,6 +31,11 @@
                 "chair-four.webp"
             ]
         },
+        "filter": [
+            "Roman",
+            "Black",
+            "Table and Chair"
+        ],
         "description": "Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae turpis massa sed elementum tempus. Sit amet consectetur adipiscing elit duis. Sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea. Quam nulla porttitor massa id neque aliquam vestibulum.",
 		"price": 550
 	},
@@ -41,6 +51,10 @@
                 "metal-chair-three.webp"
             ]
         },
+        "filter": [
+            "Turquoise",
+            "Table and Chair"
+        ],
         "description": "Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae turpis massa sed elementum tempus. Sit amet consectetur adipiscing elit duis. Sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea. Quam nulla porttitor massa id neque aliquam vestibulum.",
 		"price": 2500
 	},
@@ -56,6 +70,10 @@
                 "bed-three.webp"
             ]
         },
+        "filter": [
+            "Acacia Dark",
+            "Bed Set"
+        ],
         "description": "Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae turpis massa sed elementum tempus. Sit amet consectetur adipiscing elit duis. Sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea. Quam nulla porttitor massa id neque aliquam vestibulum.",
 		"price": 1399
 	}

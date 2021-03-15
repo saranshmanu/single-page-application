@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const build = require('./app/build');
 const products = require('./app/data/products.json');
+const categories = require('./app/data/categories.json');
 
 const app = express();
 const port = 3000;
@@ -25,6 +26,10 @@ app.get('/api/product', function(req, res) {
     }
   });
   res.send(response);
+});
+
+app.get('/api/categories', function(req, res) {
+  res.send(categories);
 });
 
 // Provide access to node_modules folder

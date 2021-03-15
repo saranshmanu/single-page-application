@@ -1,8 +1,9 @@
+const app = $('#app');
 const router = new Router({
   mode: 'history',
   page404: (path) => {
     const html = `Cannot GET ${path}`;
-    el.html(html);
+    app.html(html);
   }
 });
 
@@ -12,41 +13,39 @@ const api = axios.create({
 });
 
 window.addEventListener('load', () => {
-  const el = $('#app');
   const productTemplate = Handlebars.compile($('#product-template').html());
   const shopTemplate = Handlebars.compile($('#shop-template').html());
-
-  Handlebars.registerHelper('times', function(n, block) {
-    var accum = '';
-    for (var i = 0; i < n; ++i) accum += block.fn(i);
-    return accum;
-  });
-
-  Handlebars.registerHelper('ifEquals', function(a, b, options) {
-    if (a === b) {
-      return options.fn(this);
-    }
-    return options.inverse(this);
-  });
 
   router.add('/product', async () => {
     try {
       const product = await api.get('/product' + window.location.search);
       let html = productTemplate(product.data);
-      el.html(html);
-    } catch(err) {
+      app.html(html);
+    } catch (err) {
       console.error(err);
     }
   });
 
+  async function getProducts() {
+    const products = await api.get('/products');
+    const categories = await api.get('/categories');
+    let html = shopTemplate({ products: products.data, categories: categories.data });
+    app.html(html);
+    $('input:checkbox').on('click', async function() {
+      const checked = $('.form-check-input:checkbox:checked')
+        .map(function() {
+          return this.value;
+        })
+        .get();
+    });
+  }
+
   router.add('/', async () => {
     let html = shopTemplate();
-    el.html(html);
+    app.html(html);
     try {
-      const products = await api.get('/products');
-      let html = shopTemplate({products: products.data});
-      el.html(html);
-    } catch(err) {
+      await getProducts();
+    } catch (err) {
       console.error(err);
     }
   });
